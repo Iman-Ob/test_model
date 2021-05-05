@@ -21,5 +21,5 @@ def control_request(request):
             fin_res[i]['content']=request['data'][i]
             fin_res[i]['model']=str(type(loaded_model)).split(".")[-1][:-2]
             fin_res[i]['rating']=rating[pred[0]]
-            print("edited")
+            print("edited in copy master only")
     return Response(fin_res)
